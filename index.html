@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="index.js" defer></script>
+    <title>Alarm Project</title>
+  </head>
+  <body>
+    <main class="container">
+      <ul class="not"></ul>
+      <section id="clock"></section>
+      <button class="icon"><img src="icons8_ghost.ico" alt="" id="ghost"></button>
+      <section class="controls">
+        <input
+          onchange=" setAlarmTime(this.value)"
+          type="datetime-local"
+          name="alarmTime"
+          id="datetimeLocal"
+        />
+        <div class="btns">
+          <button onclick="setAlarm();" class="button btn" id="success">
+            Set Alarm
+          </button>
+          <button onclick="clearAlarm();" class="button btn" id="error">
+            Clear Alarm
+          </button>
+        </div>
+      </section>
+    </main> 
+  </body>
+</html>
