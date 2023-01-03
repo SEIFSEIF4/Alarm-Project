@@ -215,10 +215,13 @@ input[type="datetime-local"] {
   .controls {
     height: 5rem;
   }
-  .btn {
+  .btns {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
+  }
+  .not .toast {
+    width: 300px;
   }
 }
